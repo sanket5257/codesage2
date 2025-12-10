@@ -7,7 +7,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
-  const portfolio = portfolios8.find((item) => item.id === parseInt(params.id));
+  const resolvedParams = await params;
+  const portfolio = portfolios8.find((item) => item.id === parseInt(resolvedParams.id));
   
   if (!portfolio) {
     return {
@@ -21,8 +22,9 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function ModernPortfolioSingle({ params }) {
-  const portfolio = portfolios8.find((item) => item.id === parseInt(params.id));
+export default async function ModernPortfolioSingle({ params }) {
+  const resolvedParams = await params;
+  const portfolio = portfolios8.find((item) => item.id === parseInt(resolvedParams.id));
 
   if (!portfolio) {
     notFound();
