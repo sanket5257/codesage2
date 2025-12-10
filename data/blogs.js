@@ -1000,8 +1000,6 @@ export const blogs19 = [
 ];
 
 export const allBlogs = [
-  ...blogs1,
-  ...blogs2,
   ...blogs3,
   ...blogs4,
   ...blogs5,
