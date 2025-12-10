@@ -1,6 +1,6 @@
 import Footer2 from "@/components/footers/Footer2";
 import Header8 from "@/components/headers/Header8";
-import { modernOnepage } from "@/data/menu";
+import { modernPortfolioPage } from "@/data/menu";
 import { portfolios8 } from "@/data/portfolio";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,7 +35,7 @@ export default async function ModernPortfolioSingle({ params }) {
       <div className="theme-modern">
         <div className="page" id="top">
           <nav className="main-nav transparent stick-fixed wow-menubar">
-            <Header8 links={modernOnepage} />
+            <Header8 links={modernPortfolioPage} />
           </nav>
           <main id="main">
             {/* Hero Section */}

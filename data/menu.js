@@ -4,8 +4,7 @@ export const modernMultipage = [
   { id: 2, href: "/#about", text: "About" },
   { id: 3, href: "/#services", text: "Services" },
   { id: 4, href: "/#portfolio", text: "Portfolio" },
-  { id: 5, href: "/#blog", text: "Blog" },
-  { id: 6, href: "/#contact", text: "Contact" },
+  { id: 5, href: "/#contact", text: "Contact" },
 ];
 
 export const modernMultipageDark = [
@@ -13,8 +12,7 @@ export const modernMultipageDark = [
   { id: 2, href: "/#about", text: "About" },
   { id: 3, href: "/#services", text: "Services" },
   { id: 4, href: "/#portfolio", text: "Portfolio" },
-  { id: 5, href: "/#blog", text: "Blog" },
-  { id: 6, href: "/#contact", text: "Contact" },
+  { id: 5, href: "/#contact", text: "Contact" },
 ];
 
 export const modernOnepage = [
@@ -22,6 +20,13 @@ export const modernOnepage = [
   { href: "#about", text: "About", dataBtnAnimate: "y" },
   { href: "#services", text: "Services", dataBtnAnimate: "y" },
   { href: "#portfolio", text: "Portfolio", dataBtnAnimate: "y" },
-  { href: "#blog", text: "Blog", dataBtnAnimate: "y" },
   { href: "#contact", text: "Contact", dataBtnAnimate: "y" },
+];
+
+export const modernPortfolioPage = [
+  { href: "/", text: "Home", dataBtnAnimate: "y" },
+  { href: "/#about", text: "About", dataBtnAnimate: "y" },
+  { href: "/#services", text: "Services", dataBtnAnimate: "y" },
+  { href: "/#portfolio", text: "Portfolio", dataBtnAnimate: "y" },
+  { href: "/#contact", text: "Contact", dataBtnAnimate: "y" },
 ];
