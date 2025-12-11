@@ -84,13 +84,7 @@ export default function Home8({
                     </div>
                   </div>
                   <div className="section-image-behind">
-                    <Image
-                      src="./assets/about1.jpg"
-                      loading="lazy"
-                      width={820}
-                      height={1270}
-                      alt="Image Description"
-                    />
+                   <video autoPlay loop muted src="./assets/herobgvid.webm"></video>
                   </div>
                 </div>
               </div>
