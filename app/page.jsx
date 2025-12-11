@@ -7,9 +7,9 @@ import { modernOnepage } from "@/data/menu";
 
 export const metadata = {
   title:
-    "Home || CodeSage &mdash; One & Multi Page React Nextjs Creative Template",
+    "Codesage",
   description:
-    "CodeSage &mdash; One & Multi Page React Nextjs Creative Template",
+    "CodeSage",
 };
 export default function Home8MainDemoOnePage() {
   return (
