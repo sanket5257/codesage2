@@ -42,8 +42,8 @@ async function runDemo() {
     console.log('\n3. Full rebranding simulation...');
     console.log('A full rebranding would:');
     console.log('  - Create a timestamped backup of the entire project');
-    console.log('  - Replace all instances of "Resonance" with "CodeSage"');
-    console.log('  - Replace "resonance-next" with "codesage-next" in package.json');
+    console.log('  - Replace all instances of "Resonance" with "Evoleotion"');
+    console.log('  - Replace "resonance-next" with "evoleotion-next" in package.json');
     console.log('  - Update metadata, content, and configuration files');
     console.log('  - Validate JSON syntax after replacements');
     console.log('  - Provide rollback capability if any errors occur');

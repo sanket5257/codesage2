@@ -1,6 +1,6 @@
 # Rebranding Utilities
 
-This directory contains utilities for safely rebranding the Resonance theme to CodeSage. The utilities provide comprehensive file scanning, text replacement, backup, and rollback functionality.
+This directory contains utilities for safely rebranding the Resonance theme to Evoleotion. The utilities provide comprehensive file scanning, text replacement, backup, and rollback functionality.
 
 ## Files Overview
 
@@ -104,10 +104,10 @@ By default, the scanner processes these file types:
 ### Replacement Rules
 
 The text replacer uses these default replacements:
-- `Resonance` → `CodeSage`
-- `resonance` → `codesage`
-- `RESONANCE` → `CODESAGE`
-- `resonance-next` → `codesage-next`
+- `Resonance` → `Evoleotion`
+- `resonance` → `evoleotion`
+- `RESONANCE` → `EVOLEOTION`
+- `resonance-next` → `evoleotion-next`
 
 ### Context-Specific Rules
 

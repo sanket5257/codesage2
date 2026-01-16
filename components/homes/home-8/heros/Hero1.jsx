@@ -8,7 +8,7 @@ export default function Hero1() {
         <h1 className="hs-title-5 font-alt overflow-hidden mb-30 mb-sm-20">
           <span className="d-block text-center wow fadeRotateIn">
           
-            CodeSage
+            Evoleotion
           </span>
           <span
             className="d-block wow fadeRotateIn"

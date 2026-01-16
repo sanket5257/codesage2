@@ -31,8 +31,8 @@ export default function Home8({
                 className="section-descr-extralarge mb-100 mb-md-60 wow linesAnimIn"
                 data-splitting="lines"
               >
-                <h2 className="section-title-inline-1">About CodeSage</h2>
-                CodeSage is an independent full-service technology company
+                <h2 className="section-title-inline-1">About Evoleotion</h2>
+                Evoleotion is an independent full-service technology company
                 creating innovative digital solutions and products. We are an
                 award winning team specializing in software development, cloud solutions and
                 digital transformation. Our mission is to empower businesses through technology.
@@ -72,7 +72,7 @@ export default function Home8({
                         Established
                       </span>
                       <span className="d-inline-block wow fadeRotateIn">
-                        in 2019
+                        in 2026
                       </span>
                     </h2>
                     <div className="row">

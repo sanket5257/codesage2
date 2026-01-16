@@ -10,7 +10,7 @@ export default function Header8({ links }) {
       {/* Logo */}
       <div className="nav-logo-wrap local-scroll">
         <a href="#top" className="logo font-alt">
-          <span className="logo-text">CodeSage</span>
+          <span className="logo-text">Evoleotion</span>
         </a>
       </div>
       {/* Mobile Menu Button */}

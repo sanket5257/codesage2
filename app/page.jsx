@@ -7,9 +7,9 @@ import { modernOnepage } from "@/data/menu";
 
 export const metadata = {
   title:
-    "Codesage",
+    "Evoleotion",
   description:
-    "CodeSage",
+    "Evoleotion",
 };
 export default function Home8MainDemoOnePage() {
   return (

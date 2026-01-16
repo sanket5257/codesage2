@@ -10,10 +10,10 @@ const path = require('path');
  * Replacement configuration for different contexts
  */
 const REPLACEMENT_CONFIG = {
-  'Resonance': 'CodeSage',
-  'resonance': 'codesage',
-  'RESONANCE': 'CODESAGE',
-  'resonance-next': 'codesage-next'
+  'Resonance': 'Evoleotion',
+  'resonance': 'evoleotion',
+  'RESONANCE': 'EVOLEOTION',
+  'resonance-next': 'evoleotion-next'
 };
 
 /**
@@ -24,26 +24,26 @@ const CONTEXT_RULES = {
     preserveCase: true,
     validateJson: true,
     customReplacements: {
-      'Resonance - Modern': 'CodeSage - Modern',
-      'Resonance Theme': 'CodeSage Theme',
-      'Resonance Portfolio': 'CodeSage Portfolio'
+      'Resonance - Modern': 'Evoleotion - Modern',
+      'Resonance Theme': 'Evoleotion Theme',
+      'Resonance Portfolio': 'Evoleotion Portfolio'
     }
   },
   content: {
     preserveCase: true,
     validateJson: false,
     customReplacements: {
-      'working with Resonance': 'working with CodeSage',
-      'Resonance team': 'CodeSage team',
-      'Resonance company': 'CodeSage company'
+      'working with Resonance': 'working with Evoleotion',
+      'Resonance team': 'Evoleotion team',
+      'Resonance company': 'Evoleotion company'
     }
   },
   config: {
     preserveCase: false,
     validateJson: true,
     customReplacements: {
-      'resonance-next': 'codesage-next',
-      '"name": "resonance-next"': '"name": "codesage-next"'
+      'resonance-next': 'evoleotion-next',
+      '"name": "resonance-next"': '"name": "evoleotion-next"'
     }
   }
 };

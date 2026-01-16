@@ -39,17 +39,17 @@ describe('Text Replacement Engine', () => {
   });
 
   describe('performReplacement', () => {
-    it('should replace basic Resonance references with CodeSage', () => {
+    it('should replace basic Resonance references with Evoleotion', () => {
       const content = 'Welcome to Resonance theme by resonance team';
       const result = performReplacement(content, 'general');
       
       expect(result.success).toBe(true);
-      expect(result.updatedContent).toBe('Welcome to CodeSage theme by codesage team');
+      expect(result.updatedContent).toBe('Welcome to Evoleotion theme by evoleotion team');
       expect(result.replacements).toHaveLength(2);
       expect(result.replacements[0].search).toBe('Resonance');
-      expect(result.replacements[0].replace).toBe('CodeSage');
+      expect(result.replacements[0].replace).toBe('Evoleotion');
       expect(result.replacements[1].search).toBe('resonance');
-      expect(result.replacements[1].replace).toBe('codesage');
+      expect(result.replacements[1].replace).toBe('evoleotion');
     });
 
     it('should handle case-sensitive replacements correctly', () => {
@@ -57,7 +57,7 @@ describe('Text Replacement Engine', () => {
       const result = performReplacement(content, 'general');
       
       expect(result.success).toBe(true);
-      expect(result.updatedContent).toBe('CODESAGE, CodeSage, and codesage');
+      expect(result.updatedContent).toBe('EVOLEOTION, Evoleotion, and evoleotion');
       expect(result.replacements).toHaveLength(3);
     });
 
@@ -66,7 +66,7 @@ describe('Text Replacement Engine', () => {
       const result = performReplacement(content, 'metadata', { validateJson: false });
       
       expect(result.success).toBe(true);
-      expect(result.updatedContent).toBe('CodeSage - Modern');
+      expect(result.updatedContent).toBe('Evoleotion - Modern');
       expect(result.replacements.some(r => r.type === 'custom')).toBe(true);
     });
 
@@ -104,8 +104,8 @@ describe('Text Replacement Engine', () => {
       
       expect(result.success).toBe(true);
       expect(validateJsonSyntax(result.updatedContent)).toBe(true);
-      expect(result.updatedContent).toContain('codesage-next');
-      expect(result.updatedContent).toContain('CodeSage');
+      expect(result.updatedContent).toContain('evoleotion-next');
+      expect(result.updatedContent).toContain('Evoleotion');
     });
 
     it('should fail validation if JSON becomes invalid after replacement', () => {
@@ -134,8 +134,8 @@ describe('Text Replacement Engine', () => {
       
       expect(result.success).toBe(true);
       expect(validateJsonSyntax(result.updatedContent)).toBe(true);
-      expect(result.updatedContent).toContain('codesage-next');
-      expect(result.updatedContent).toContain('CodeSage');
+      expect(result.updatedContent).toContain('evoleotion-next');
+      expect(result.updatedContent).toContain('Evoleotion');
     });
   });
 
@@ -156,8 +156,8 @@ describe('Text Replacement Engine', () => {
       expect(result.replacements.length).toBeGreaterThan(0);
       
       const updatedContent = await fs.promises.readFile(TEST_FILES.js, 'utf8');
-      expect(updatedContent).toContain('CodeSage');
-      expect(updatedContent).toContain('codesage-next');
+      expect(updatedContent).toContain('Evoleotion');
+      expect(updatedContent).toContain('evoleotion-next');
       expect(updatedContent).not.toContain('Resonance');
     });
 
@@ -181,8 +181,8 @@ describe('Text Replacement Engine', () => {
       expect(result.success).toBe(true);
       
       const updatedContent = await fs.promises.readFile(TEST_FILES.jsx, 'utf8');
-      expect(updatedContent).toContain('Welcome to CodeSage');
-      expect(updatedContent).toContain('codesage theme');
+      expect(updatedContent).toContain('Welcome to Evoleotion');
+      expect(updatedContent).toContain('evoleotion theme');
     });
 
     it('should handle JSON files with validation', async () => {
@@ -199,8 +199,8 @@ describe('Text Replacement Engine', () => {
       
       const updatedContent = await fs.promises.readFile(TEST_FILES.json, 'utf8');
       const parsedContent = JSON.parse(updatedContent);
-      expect(parsedContent.name).toBe('codesage-next');
-      expect(parsedContent.description).toContain('CodeSage');
+      expect(parsedContent.name).toBe('evoleotion-next');
+      expect(parsedContent.description).toContain('Evoleotion');
     });
 
     it('should handle CSS files correctly', async () => {
@@ -221,9 +221,9 @@ describe('Text Replacement Engine', () => {
       expect(result.success).toBe(true);
       
       const updatedContent = await fs.promises.readFile(TEST_FILES.css, 'utf8');
-      expect(updatedContent).toContain('CodeSage Theme');
-      expect(updatedContent).toContain('codesage-header');
-      expect(updatedContent).toContain('codesage-portfolio');
+      expect(updatedContent).toContain('Evoleotion Theme');
+      expect(updatedContent).toContain('evoleotion-header');
+      expect(updatedContent).toContain('evoleotion-portfolio');
     });
 
     it('should handle Markdown files correctly', async () => {
@@ -243,9 +243,9 @@ describe('Text Replacement Engine', () => {
       expect(result.success).toBe(true);
       
       const updatedContent = await fs.promises.readFile(TEST_FILES.md, 'utf8');
-      expect(updatedContent).toContain('# CodeSage Theme');
-      expect(updatedContent).toContain('codesage team');
-      expect(updatedContent).toContain('Modern CodeSage design');
+      expect(updatedContent).toContain('# Evoleotion Theme');
+      expect(updatedContent).toContain('evoleotion team');
+      expect(updatedContent).toContain('Modern Evoleotion design');
     });
   });
 
@@ -270,7 +270,7 @@ describe('Text Replacement Engine', () => {
 
     it('should rollback file from backup', async () => {
       const originalContent = 'Original Resonance content';
-      const modifiedContent = 'Modified CodeSage content';
+      const modifiedContent = 'Modified Evoleotion content';
       
       await fs.promises.writeFile(TEST_FILES.js, originalContent);
       const backupPath = await createBackup(TEST_FILES.js);
@@ -390,7 +390,7 @@ describe('Text Replacement Engine', () => {
       expect(result.success).toBe(true);
       
       const updatedContent = await fs.promises.readFile(TEST_FILES.js, 'utf8');
-      expect(updatedContent).toContain('CodeSage with émojis 🎉');
+      expect(updatedContent).toContain('Evoleotion with émojis 🎉');
     });
 
     it('should handle very large content', async () => {

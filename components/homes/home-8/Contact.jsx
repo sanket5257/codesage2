@@ -15,13 +15,13 @@ export default function Contact() {
               {/* Change the phone number inside and link tag and href attribute */}
               Call us:
               <a href="tel:+18376528800" className="text-link">
-                +1 837 652 8800
+                +91 7083259985
               </a>
               <br />
               {/* Change the email address inside and link tag and href attribute */}
               Say hi:
               <a href="mailto:hello@codesage.in" className="text-link">
-                hello@codesage.in
+                hello@evoleotion.in
               </a>
             </p>
             <div>

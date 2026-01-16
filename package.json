@@ -1,7 +1,7 @@
 {
-  "name": "codesage-next",
+  "name": "evoleotion-next",
   "version": "1.5.0",
-  "description": "CodeSage - Modern Next.js theme for India-based technology companies",
+  "description": "Evoleotion - Modern Next.js theme for India-based technology companies",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
